@@ -1,5 +1,6 @@
 import React from 'react'
 import CustomInput from './common/CustomInput'
+import CustomButton from './common/CustomButton'
 
 const Form = () => {
     return (
@@ -15,6 +16,7 @@ const Form = () => {
                         <CustomInput type="Password" placeholder="Password" />
                         <CustomInput type="Password" placeholder="Confirm Password" />
                     </div>
+                    <CustomButton type="Submit" text="Submit" />
                 </div>
             </div>
         </>
