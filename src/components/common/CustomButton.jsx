@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CustomButton = ({ text, type }) => {
+const CustomButton = ({ name, text, type, onchange, value }) => {
     return (
-        <button type={type} className="px-7 rounded-4xl font-mono flex cursor-pointer mx-auto py-2 border-[1.5px] mt-6 border-black transition-all duration-500 ease-in-out hover:text-white hover:[box-shadow:inset_0_-100px_0_0_black]">
+        <button name={name} value={value} type={type} onChange={onchange} className="px-7 rounded-4xl font-mono flex cursor-pointer mx-auto py-2 border-[1.5px] mt-6 border-black transition-all duration-500 ease-in-out hover:text-white hover:[box-shadow:inset_0_-100px_0_0_black]">
             {text}
         </button>
     )
